@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/SCROW"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- ScrollView deve estar dentro do ConstraintLayout -->
+    <ScrollView
+        android:id="@+id/SCROW"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- LinearLayout dentro do ScrollView -->
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/telaa1"
+                android:layout_width="match_parent"
+                android:layout_height="1013dp"
+                android:src="@drawable/telaa1" />
+
+            <ImageView
+                android:id="@+id/telaa2"
+                android:layout_width="583dp"
+                android:layout_height="835dp"
+                android:src="@drawable/telaa2" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Outro LinearLayout (linear2) e Guideline aqui -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
