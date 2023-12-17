@@ -36,12 +36,12 @@ android {
 }
 
 dependencies {
+    implementation("androidx.core:core-ktx:latest.release")
+    implementation("androidx.appcompat:appcompat:latest.release")
+    implementation("com.google.android.material:material:latest.release")
+    implementation("androidx.constraintlayout:constraintlayout:latest.release")
+    testImplementation("junit:junit:latest.release")
+    androidTestImplementation("androidx.test.ext:junit:latest.release")
+    androidTestImplementation("androidx.test.espresso:espresso-core:latest.release")
 
-    implementation("androidx.core:core-ktx:1.9.0")
-    implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("com.google.android.material:material:1.10.0")
-    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
-    testImplementation("junit:junit:4.13.2")
-    androidTestImplementation("androidx.test.ext:junit:1.1.5")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 }

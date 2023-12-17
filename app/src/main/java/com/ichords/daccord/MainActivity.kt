@@ -10,9 +10,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Botão 2
-        val button2 = findViewById<ImageButton>(R.id.Button2)
-        button2.setOnClickListener {
+        // Botão Tutorial
+        val buttonTutorial = findViewById<ImageButton>(R.id.botaotutorial1)
+        buttonTutorial.setOnClickListener {
             // Navegar para a segunda tela (Tela2Activity)
             val intent = Intent(this, Tela2Activity::class.java)
             startActivity(intent)
